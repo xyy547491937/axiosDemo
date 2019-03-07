@@ -1,0 +1,740 @@
+@import url("./style.less");
+
+.box-margin-bottom {
+  margin-bottom: 18px;
+}
+
+.nodata {
+  background: #fff;
+  height: 450px;
+
+  >figure {
+    display: block;
+    margin: 0 auto;
+    width: 192px;
+    padding-top: 50px;
+
+    >img {
+      width: 100%;
+    }
+  }
+}
+
+.box-border-bottom {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.box-border-top {
+  border-top: 1px solid #f1f1f1;
+}
+
+.bg-color-one {
+  background-color: #fe86d8;
+}
+
+.bg-color-two {
+  background-color: #ff4691;
+}
+
+.bg-color-there {
+  background-color: #d29dff;
+}
+
+.bg-color-four {
+  background-color: #74dec4;
+}
+
+.common-box-style {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-start;
+  -webkit-align-items: flex-start;
+
+  >div {
+    flex: 1;
+    -webkit-flex: 1;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+  }
+}
+
+.mechanism {
+  min-height: 100%;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  padding-bottom: 98px;
+
+  .mechanism-icon {
+    width: 100%;
+    height: 440px;
+    box-sizing: border-box;
+    position: relative;
+
+    >span {
+      width: 60px;
+      height: 60px;
+      box-sizing: border-box;
+      display: block;
+      border-radius: 100%;
+      background-color: rgba(85, 85, 85, 0.7);
+      position: absolute;
+      z-index: 9;
+      text-align: center;
+      line-height: 60px;
+
+      >img {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .details-back {
+      top: 57px;
+      left: 30px;
+      color: #fff;
+      // background-image: url('/static/back.png');
+      // background-size: 30px 30px;
+      // background-repeat: no-repeat;
+      // background-position: center;
+    }
+
+    .details-share {
+      top: 57px;
+      right: 30px;
+      color: #fff;
+      // background-image: url('/static/share_icon.png');
+      // background-size: 30px 30px;
+      // background-repeat: no-repeat;
+      // background-position: center;
+    }
+
+    >figure {
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+
+      >img {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+
+    .mechanism-icon-info {
+      width: 100%;
+      background-color: rgba(85, 85, 85, 0.32);
+      box-sizing: border-box;
+      padding: 23px 30px 21px 33px;
+      color: #fff;
+      position: absolute;
+      bottom: 0;
+
+      >p:first-child {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        align-items: center;
+        -webkit-align-items: center;
+
+        >span {
+          &:first-child {
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 46px;
+          }
+
+          &:last-child {
+            width: 126px;
+            height: 46px;
+            background: rgba(255, 255, 255, 1);
+            border-radius: 23px;
+            font-size: 26px;
+            display: inline-block;
+            line-height: 46px;
+            background-color: #ff4691;
+            text-align: center;
+          }
+        }
+      }
+
+      >p:last-child {
+        font-size: 22px;
+      }
+    }
+  }
+
+  .mechanism-info {
+    width: 100%;
+    height: 160px;
+    background: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: space-around;
+
+    >div {
+      width: 16.4%;
+      height: 155px;
+      font-size: 30px;
+      font-family: PingFangSC-Regular;
+      font-weight: 400;
+      color: rgba(51, 51, 51, 1);
+      line-height: 28px;
+      text-align: center;
+      position: relative;
+
+      >span {
+        position: absolute;
+        bottom: 27px;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+    }
+
+    .mechanism-img1 {
+      background: url(http://img.meiduduo.com/images/xyy/shop-n.png) center 38px no-repeat;
+      background-size: 36px 40px;
+    }
+
+    .mechanism-img2 {
+      background: url(http://img.meiduduo.com/images/xyy/diary_n.png) center 38px no-repeat;
+      background-size: 40px 40px;
+    }
+
+    .mechanism-img3 {
+      background: url(http://img.meiduduo.com/images/xyy/doctor-n.png) center 38px no-repeat;
+      background-size: 40px 40px;
+    }
+
+    .mechanism-img4 {
+      background: url(http://img.meiduduo.com/images/xyy/organ-example.png) center 38px no-repeat;
+      background-size: 44px 40px;
+    }
+
+    .mechanism-img5 {
+      background: url(http://img.meiduduo.com/images/xyy/live-n.png) center 38px no-repeat;
+      background-size: 44px 40px;
+    }
+
+    .mechanism-img1-act {
+      background: url(http://img.meiduduo.com/images/xyy/shop-y.png) center 38px no-repeat;
+      background-size: 36px 40px;
+      color: rgba(255, 70, 145, 1);
+    }
+
+    .mechanism-img2-act {
+      background: url(http://img.meiduduo.com/images/xyy/diary_y.png) center 38px no-repeat;
+      background-size: 40px 40px;
+      color: rgba(255, 70, 145, 1);
+    }
+
+    .mechanism-img3-act {
+      background: url(http://img.meiduduo.com/images/xyy/doctor-y.png) center 38px no-repeat;
+      background-size: 40px 40px;
+      color: rgba(255, 70, 145, 1);
+    }
+
+    .mechanism-img4-act {
+      background: url(http://img.meiduduo.com/images/xyy/organ-example-active.png) center 38px no-repeat;
+      background-size: 44px 40px;
+      color: rgba(255, 70, 145, 1);
+    }
+
+    .mechanism-img5-act {
+      background: url(http://img.meiduduo.com/images/xyy/live-y.png) center 38px no-repeat;
+      background-size: 44px 40px;
+    }
+  }
+
+  .mechanism-position {
+    // width: 100%;
+    padding: 0 15px;
+    height: 120px;
+    background: url(http://img.meiduduo.com/images/xyy/address.png) no-repeat 36px center rgba(255, 255, 255, 1);
+    background-size: 28px 32px;
+    margin: -12px 0 15px 0;
+    display: flex;
+    align-items: center;
+    // position: relative;
+    z-index: 4;
+    justify-content: space-between;
+
+    >p {
+      width: 80%;
+      font-size: 30px;
+      font-family: PingFangSC-Regular;
+      font-weight: 400;
+      color: rgba(51, 51, 51, 1);
+      line-height: 35px;
+      margin-left: 80px;
+    }
+
+    >span {
+      // position: absolute;
+      // right: 37px;
+    }
+  }
+
+  .doctor-info {
+    width: 100%;
+
+    position: relative;
+
+    >ul>li {
+      background: rgba(255, 255, 255, 1);
+      height: 310px;
+      margin-bottom: 20px;
+
+      >img {
+        margin: 35px 27px 42px 28px;
+        background-size: 100px 100px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: inline-block;
+      }
+
+      .person {
+        font-size: 30px;
+        font-family: PingFangSC-Medium;
+        font-weight: 500;
+        color: rgba(51, 51, 51, 1);
+        line-height: 30px;
+        top: 32px;
+        left: 158px;
+      }
+
+      >span {
+        position: absolute;
+
+        &:nth-child(3) {
+          font-size: 26px;
+          font-family: PingFangSC-Regular;
+          font-weight: 400;
+          color: rgba(102, 102, 102, 1);
+          line-height: 30px;
+          top: 34px;
+          left: 266px;
+        }
+
+        &:nth-child(4) {
+          font-size: 24px;
+          font-family: PingFangSC-Medium;
+          font-weight: 500;
+          color: rgba(255, 70, 145, 1);
+          line-height: 30px;
+          right: 30px;
+          top: 35px;
+        }
+
+        &:nth-child(5) {
+          font-size: 26px;
+          font-family: PingFangSC-Regular;
+          font-weight: 400;
+          color: rgba(102, 102, 102, 1);
+          line-height: 30px;
+          top: 78px;
+          left: 158px;
+        }
+
+        &:nth-child(6) {
+          font-size: 24px;
+          font-family: PingFangSC-Regular;
+          font-weight: 400;
+          color: rgba(102, 102, 102, 1);
+          line-height: 30px;
+          top: 123px;
+          left: 159px;
+        }
+      }
+    }
+
+    .line {
+      margin: -15px auto 0;
+      width: 95%;
+      height: 1px;
+      border-bottom: 1px solid rgb(238, 238, 238);
+    }
+
+    ul>li {
+      position: relative;
+
+      .project {
+        font-size: 26px;
+        font-family: PingFangSC-Regular;
+        font-weight: 400;
+        color: rgba(170, 170, 170, 1);
+        left: 163px;
+      }
+
+      >span {
+        line-height: 30px;
+        position: absolute;
+        top: 26px;
+
+        &:first-child {
+          font-size: 26px;
+          font-family: PingFangSC-Medium;
+          font-weight: 500;
+          color: rgba(255, 70, 145, 1);
+          right: 618px;
+        }
+
+        &:last-child {
+          font-size: 24px;
+          font-family: PingFangSC-Regular;
+          font-weight: 400;
+          color: rgba(153, 153, 153, 1);
+          right: 23px;
+        }
+      }
+    }
+  }
+
+  .case-ifo {
+    position: relative;
+    width: 100%;
+    // min-height: 200px;
+    background: #fff;
+    padding-bottom: 40px;
+
+    .hospital-title {
+      font-size: 34px;
+      font-weight: 600;
+      color: #333;
+      line-height: 80px;
+    }
+
+    .hospital-word {
+      font-size: 24px;
+      font-weight: 400;
+      color: #999;
+      display: block;
+      min-height: 450px;
+      line-height: 40px;
+    }
+
+    >span {
+      display: block;
+      margin-left: 40px;
+    }
+  }
+
+  .diary-info {
+    // min-height: 700px;
+    width: 100%;
+    position: relative;
+    background: #fff;
+
+    .diary-img {
+      display: flex;
+      justify-content: space-evenly;
+
+      >img {
+        width: 344px;
+        height: 330px;
+        border-radius: 0px 4px 4px 0px;
+      }
+    }
+  }
+
+  .video-info {
+    // min-height: 500px;
+    width: 100%;
+    background-color: #f5f5f5;
+  }
+
+  .aside-btns {
+    width: 100%;
+    height: 98px;
+    display: flex;
+    display: -webkit-flex;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+
+    >span {
+      font-size: 30px;
+      color: #fff;
+      flex: 1;
+      -webkit-flex: 1;
+      display: inline-flex;
+      display: -webkit-inline-flex;
+      align-items: center;
+      -webkit-align-items: center;
+      justify-content: center;
+      -webkit-justify-content: center;
+
+      &:first-child {
+        background-color: #fa97e6;
+      }
+
+      &:last-child {
+        background-color: #fc4396;
+      }
+
+      >img {
+        display: inline-block;
+        width: 42px;
+        height: 42px;
+        margin-right: 23px;
+      }
+
+      .yuyue-btn {
+        display: block;
+        width: 43px;
+        height: 43px;
+        background-image: url("http://img.meiduduo.com/images/mineItem/phon.png");
+        background-size: 43px 43px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-right: 23px;
+      }
+
+      .zixun-btn {
+        display: block;
+        width: 42px;
+        height: 42px;
+        background-image: url("http://img.meiduduo.com/images/h5/zixun_icon.png");
+        background-size: 42px 42px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-right: 23px;
+      }
+    }
+  }
+}
+
+.z-lines-2-overflow-hidden {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.vux-tab {
+  background: transparent;
+}
+
+// #change-bg /deep/ .vux-tab-container{
+//  height: 87px;
+//  overflow: auto
+// }
+.header {
+  position: relative;
+  height: 760px;
+}
+
+.completePicture-bg {
+  height: 459px;
+  width: 100%;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.organ-info-bg {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  top: 275px;
+  height: 474px;
+  background: rgba(255, 255, 255, 1);
+}
+
+.organ-info {
+  position: absolute;
+  top: 250px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 90%;
+  height: 440px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 5px;
+  z-index: 3;
+  border: rgba(255, 70, 145, 0.2) 1px solid;
+  box-shadow: 0px 20px 100px rgba(255, 70, 145, 0.2);
+
+  .organ-name {
+    // display: flex;
+    // flex-direction: row;
+    font-size: 36px;
+    font-family: PingFangSC-Medium;
+    font-weight: 500;
+    color: rgba(51, 51, 51, 1);
+    margin-top: 40px;
+    text-align: center;
+    padding: 0 40px;
+    vertical-align: middle;
+
+    .organ-name-title {
+      // display: inline-block;
+      // width: 80%;
+    }
+  }
+
+  .focus-group {
+    text-align: center;
+    justify-content: center;
+    margin: 10px 0;
+
+    .focus {
+      width: 126px;
+      height: 46px;
+      background: rgba(255, 255, 255, 1);
+      border-radius: 23px;
+      font-size: 26px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      line-height: 46px;
+      background-color: #ff4691;
+      color: #fff;
+      top: 114px;
+    }
+  }
+
+  .star-score {
+    // height: 80px;
+    justify-content: center;
+    text-align: center;
+    line-height: 80px;
+
+    >.star-box {
+      align-items: center;
+      justify-content: center;
+
+      &>.star-dit {
+        width: 36px;
+        height: 36px;
+        background-image: url("http://img.meiduduo.com/images/xyy/full_star.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      &>.star-dit:not(:first-child) {
+        margin-left: 20px;
+      }
+    }
+
+    &>.star-num {
+      color: #feb259;
+      margin-left: 20px;
+    }
+  }
+
+  .organ-list {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+
+    >div {
+      font-size: 26px;
+      // width: 120px;
+      flex: 1;
+      height: 120px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+
+      &:nth-child(1) {
+        background: url(http://img.meiduduo.com/images/xyy/organ-info-dun.png) center 20px no-repeat;
+        background-size: 40px 44px;
+      }
+
+      &:nth-child(2) {
+        background: url(http://img.meiduduo.com/images/xyy/organ-info-pic.png) center 20px no-repeat;
+        background-size: 52px 42px;
+      }
+
+      &:nth-child(3) {
+        background: url(http://img.meiduduo.com/images/xyy/organ-info-star.png) center 20px no-repeat;
+        background-size: 48px 44px;
+      }
+
+      &:nth-child(4) {
+        background: url(http://img.meiduduo.com/images/xyy/organ-logo.png) center 20px no-repeat;
+        background-size: 50px 44px;
+      }
+    }
+  }
+}
+
+.organNamet {
+  display: inline-block;
+  overflow: hidden;
+  max-width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.natureName {
+  padding: 2px 9px;
+  background: rgba(250, 151, 230, 1);
+  border-radius: 6px;
+  font-size: 24px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  line-height: 28px;
+  vertical-align: middle;
+}
+
+.tuan {
+  background: url(http://img.meiduduo.com/images/xyy/organ-pin.png) no-repeat 30px center rgba(255, 255, 255, 1);
+}
+
+.dai {
+  background: url(http://img.meiduduo.com/images/xyy/organ-dai.png) no-repeat 30px center rgba(255, 255, 255, 1);
+}
+
+.pindai {
+  height: 100px;
+  background-size: 32px;
+  margin-bottom: 18px;
+  position: relative;
+
+  >span {
+    font-size: 30px;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    line-height: 100px;
+    padding-left: 75px;
+
+    &:nth-child(2) {
+      position: absolute;
+      right: 15px;
+    }
+  }
+}
+
+[v-cloak] {
+  display: none;
+}
+
+.star-ban {
+  background-image: url(http://img.meiduduo.com/images/xyy/star1.png) !important;
+}
+
+.star-kong {
+  background-image: url(http://img.meiduduo.com/images/xyy/star2.png) !important;
+}

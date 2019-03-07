@@ -1,0 +1,237 @@
+[33mcommit 22f35fb86e208489f4bbdb2cdad154ad6365f002[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 06ab2f0 ae18253
+Author: wangnana <827081045@qq.com>
+Date:   Thu Dec 6 09:36:36 2018 +0800
+
+    Merge branch 'master' of http://192.168.1.210/lishangyang/app-html5
+
+[33mcommit 06ab2f013428fa4000f8656db7fef976c5f19526[m
+Author: wangnana <827081045@qq.com>
+Date:   Thu Dec 6 09:35:42 2018 +0800
+
+     suojin
+
+[33mcommit ae18253c685863e8060f1ddd6c95997b251ea459[m
+Author: wangnana <827081045@qq.com>
+Date:   Thu Dec 6 09:29:09 2018 +0800
+
+[33mcommit 0c110adafc7f727d48374345fc896f7a73b80ea9[m
+Author: wangnana <827081045@qq.com>
+Date:   Thu Dec 6 09:27:18 2018 +0800
+
+    关于我们完善
+
+[33mcommit 0d2c85cace54f449820e89fc699f18ae9cc9667c[m
+Author: wangnana <827081045@qq.com>
+Date:   Thu Dec 6 08:40:07 2018 +0800
+
+    咨询详情：返回顶部，上拉加载，下拉刷新
+
+[33mcommit 8e22409bf4e1779747b23868797b650d4feffc87[m
+Author: tim760255458 <760255458@qq.com>
+Date:   Wed Dec 5 17:31:37 2018 +0800
+
+    update
+
+[33mcommit 9f5d85efd58240dc6f76ef70f339e35eab21202b[m
+Merge: 3032a87 25410b1
+Author: tim760255458 <760255458@qq.com>
+Date:   Wed Dec 5 14:54:44 2018 +0800
+
+    Merge branch 'master' of http://192.168.1.210/lishangyang/app-html5
+
+[33mcommit 3032a87d894b317dbcbcb359c5d0779c1cdab7cb[m
+Author: tim760255458 <760255458@qq.com>
+Date:   Wed Dec 5 14:54:36 2018 +0800
+
+    update 邀请好友、拼团商品详情、医生主页接口调试
+
+[33mcommit 25410b1eea7831542a76780a6ac45588519b5ead[m
+Merge: 0895376 3d6c0eb
+Author: [xyy547491937] <18210854820@163.com>
+Date:   Wed Dec 5 10:29:45 2018 +0800
+
+    Merge branch 'master' of http://192.168.1.210/lishangyang/app-html5
+
+[33mcommit 089537673d6ba48f1bf204d2160440ecd5992a8a[m
+Author: [xyy547491937] <18210854820@163.com>
+Date:   Wed Dec 5 10:29:41 2018 +0800
+
+    提交
+
+[33mcommit 3d6c0eb235a8f2c918110e1d8af79ee04cf834bd[m
+Author: wangnana <827081045@qq.com>
+Date:   Wed Dec 5 09:09:37 2018 +0800
+
+    我的关于，资讯详情。
+
+[33mcommit bc4169a4f7916decda829a92b4326f6e7e0b56b9[m
+Merge: 439a38a 1550726
+Author: [xyy547491937] <18210854820@163.com>
+Date:   Wed Dec 5 08:59:14 2018 +0800
+
+    tijiao
+
+[33mcommit 439a38a142840ded6164cb7fdf960ae2cb907112[m
+Author: [xyy547491937] <18210854820@163.com>
+Date:   Wed Dec 5 08:58:20 2018 +0800
+
+    提交
+
+[33mcommit 155072652acdac2033b491b74277ea8e2c430335[m
+Author: tim760255458 <760255458@qq.com>
+Date:   Wed Dec 5 08:54:44 2018 +0800
+
+    update
+
+[33mcommit b61014842f196ce2af757eecf3e0b865d79b1aad[m
+Merge: 3f9ad46 4921e08
+Author: tim760255458 <760255458@qq.com>
+Date:   Tue Dec 4 18:18:33 2018 +0800
+
+    fix 解决冲突
+
+[33mcommit 3f9ad46c69ec285c84ee769af25ead3208cd9ae0[m
+Author: tim760255458 <760255458@qq.com>
+Date:   Tue Dec 4 18:15:15 2018 +0800
+
+    add 邀请好友页面
+
+[33mcommit 4921e08001217c44822312d6057f84bc837d5a71[m
+Merge: cd80294 7084abe
+Author: [xyy547491937] <18210854820@163.com>
+Date:   Tue Dec 4 17:18:40 2018 +0800
+
+    Merge branch 'master' of http://192.168.1.210/lishangyang/app-html5
+
+[33mcommit cd8029404cc2327e396f132921c8f268556f204e[m
+Author: [xyy547491937] <18210854820@163.com>
+Date:   Tue Dec 4 17:18:35 2018 +0800
+
+    提交
+
+[33mcommit 7084abe506b3092f9c6bd12466f3c543304d8007[m
+Merge: 0fced1e 499b153
+Author: tim760255458 <760255458@qq.com>
+Date:   Tue Dec 4 15:33:54 2018 +0800
+
+    Merge branch 'master' of http://192.168.1.210/lishangyang/app-html5
+
+[33mcommit 0fced1e770d4457db5c36506fb7f940ca12effce[m
+Author: tim760255458 <760255458@qq.com>
+Date:   Tue Dec 4 15:33:47 2018 +0800
+
+    add 医生详情页面编写
+
+[33mcommit 499b1539cf1579aba27aa3fbf1b4857b058a0a4e[m
+Merge: a5a9c3f b0de6ff
+Author: [xyy547491937] <18210854820@163.com>
+Date:   Tue Dec 4 12:32:20 2018 +0800
+
+    提交
+
+[33mcommit a5a9c3f40d190503e5d444e0f4584494e2f5d733[m
+Author: [xyy547491937] <18210854820@163.com>
+Date:   Tue Dec 4 12:31:45 2018 +0800
+
+    tijiao
+
+[33mcommit b0de6ff8f873c9f271c28d9b25e56e9582569a35[m
+Author: tim760255458 <760255458@qq.com>
+Date:   Tue Dec 4 12:30:59 2018 +0800
+
+    add 请求
+
+[33mcommit 1dfd1c0be8de13b411af8dcbe20e48a0c292aa77[m
+Author: tim760255458 <760255458@qq.com>
+Date:   Tue Dec 4 10:33:41 2018 +0800
+
+    update
+
+[33mcommit 2341244de4c3564b21efca2561142c239e0dfd9d[m
+Author: [xyy547491937] <18210854820@163.com>
+Date:   Tue Dec 4 10:33:12 2018 +0800
+
+    tijiao
+
+[33mcommit 239f21427c87a9b6eb66770b15ff9383c497ce0a[m
+Merge: d76a11b cdab85c
+Author: tim760255458 <760255458@qq.com>
+Date:   Mon Dec 3 19:35:22 2018 +0800
+
+    Merge branch 'master' of http://192.168.1.210/lishangyang/app-html5
+
+[33mcommit d76a11be1f6d25a358c851104690ec4b31a7e3be[m
+Author: tim760255458 <760255458@qq.com>
+Date:   Mon Dec 3 19:35:15 2018 +0800
+
+    add 拼团商品详情页面
+
+[33mcommit cdab85cd72c76dbfe40653bcf0a8434fcdbbccb2[m
+Merge: d88a15a d193f2d
+Author: [xyy547491937] <18210854820@163.com>
+Date:   Mon Dec 3 17:17:40 2018 +0800
+
+    tijiao
+
+[33mcommit d88a15a8ef261539afac5f6d736506c2c80baff4[m
+Author: [xyy547491937] <18210854820@163.com>
+Date:   Mon Dec 3 17:16:52 2018 +0800
+
+    提交
+
+[33mcommit d193f2d5eaa717a2f67b75cb4c3a59a8c33dfbe1[m
+Author: tim760255458 <760255458@qq.com>
+Date:   Mon Dec 3 17:16:23 2018 +0800
+
+    update
+
+[33mcommit 5699974e0d629fe5506bbdcb291424ecc482ff69[m
+Author: tim760255458 <760255458@qq.com>
+Date:   Mon Dec 3 15:51:39 2018 +0800
+
+    update
+
+[33mcommit aae5b539d42596f1e011d1b7169c0cea98ea113d[m
+Author: tim760255458 <760255458@qq.com>
+Date:   Mon Dec 3 12:48:20 2018 +0800
+
+    update 根节点默认高度100%
+
+[33mcommit ee959316d3b18fdeebf42ec1775086be11167e5b[m
+Merge: 111848c ef57d1f
+Author: [xyy547491937] <18210854820@163.com>
+Date:   Mon Dec 3 12:21:59 2018 +0800
+
+    Merge branch 'master' of http://192.168.1.210/lishangyang/app-html5
+
+[33mcommit 111848c627e9779109770a548a4f03590fc3e760[m
+Author: [xyy547491937] <18210854820@163.com>
+Date:   Mon Dec 3 12:21:55 2018 +0800
+
+    tijioa
+
+[33mcommit ef57d1fe05cd0b593215df266d9de7e74d45c297[m
+Merge: 740b494 1da1cff
+Author: tim760255458 <760255458@qq.com>
+Date:   Mon Dec 3 11:35:26 2018 +0800
+
+    fix 解决冲突
+
+[33mcommit 740b49411680729b2ffb72a382c94864f10b41bd[m
+Author: tim760255458 <760255458@qq.com>
+Date:   Mon Dec 3 11:34:02 2018 +0800
+
+    update
+
+[33mcommit 1da1cff8cb9ceb87c52f0aa06ec1b017932cabe7[m
+Author: [xyy547491937] <18210854820@163.com>
+Date:   Mon Dec 3 11:22:20 2018 +0800
+
+    提交
+
+[33mcommit 9c793f5fd55a5308cf75502d16760bdfe0e05649[m
+Author: tim760255458 <760255458@qq.com>
+Date:   Mon Dec 3 10:45:15 2018 +0800
+
+    init project

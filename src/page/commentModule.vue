@@ -1,0 +1,251 @@
+<template>
+  <div class="commentbor" ref="commentbor" :style="status?`bottom:${defaultHeight}px`: ''">
+    <!-- <div class="footer" v-if="writeItem&&writeItem.write1 && !status" @click="sendStatusMth">
+    <img src="http://img.meiduduo.com/images/info/footer_comment.png" alt="">评论
+    </div>-->
+    <div @click="sendStatusMth" class="write-comment" v-if="writeItem&&writeItem.write2 && !status">
+      <!-- <input
+        :disabled="true"
+        name="input"
+        placeholder="写评论..."
+        v-model="content"
+        @focus="sendStatusMth"
+      > -->
+      <div class="comment-module-area">
+        <span class="comment-module-message-info">评论</span>
+      </div>
+    </div>
+    <div class="writeComment1" v-if="status">
+      <div class="input">
+        <!-- :focus="true" -->
+        <input
+          name="input1"
+          autofocus="autofocus"
+          :cursor-spacing="50"
+          v-model="content"
+          ref="inputCon"
+          @focus="getInput"
+          id="hhhh"
+        >
+      </div>
+      <span class="send" @click="commentSave">发布</span>
+    </div>
+  </div>
+</template>
+
+<script>
+import { http } from "../api/pageApi.js";
+const dataArr = [];
+export default {
+  data() {
+    return {
+      status: false,
+      add: false,
+      content: "",
+      show6: false,
+      defaultHeight: 0,
+      activeHeight: 0
+    };
+  },
+  props: ["writeItem"],
+  created() {
+    this.status = false;
+    this.add = false;
+  },
+  watch: {
+    "writeItem.sendStatus": {
+      handler(val) {
+        this.status = val;
+      }
+    }
+  },
+  methods: {
+    getInput() {
+      console.log("聚焦了");
+      // setTimeout(() => {
+      //   this.defaultHeight = 0
+      //   document.getElementsByTagName('body')[0].scrollTop = 300
+      // }, 500);
+
+      // $("#hhhh").on("click", function() {
+      //   var target = this;
+      //   // 使用定时器是为了让输入框上滑时更加自然
+      //   setTimeout(function() {
+      //     // target.scrollIntoView(true);
+      //     alert(1);
+      //     target.scrollIntoViewIfNeeded(true); // 推荐使用
+      //   }, 100);
+      // });
+    },
+    sendStatusMth() {
+      this.$emit('showInput')
+      this.add = true;
+      this.$nextTick(() => {
+        this.status = true;
+      });
+    },
+    // 保存评论
+    commentSave() {
+      if (!this.writeItem.custId) {
+        this.$emit("sendStatusM", this.status);
+        return false;
+      }
+      if (this.content.length > 0) {
+        var commentType = "",
+          commentId = 0,
+          criticId = "";
+          console.log(this.add,this.writeItem.sendStatus)
+        if (this.add) {
+          commentType = this.writeItem.commentType;
+          commentId = 0;
+          criticId = "";
+        }
+        if (this.writeItem.sendStatus) {
+          commentType = 11;
+          commentId = this.writeItem.commentId;
+          criticId = this.writeItem.criticId;
+        }
+        var option = {
+          id: "", // id，新增时为空，修改时必输
+          contentId: this.writeItem.contentId,
+          custId: this.writeItem.custId,
+          criticId: this.writeItem.criticId,
+          content: this.content,
+          commentId: commentId,
+          commentType: commentType
+        };
+        http("comment/save", option).then(res => {
+          if (res.code == 1) {
+            // wx.showToast({
+            //   title: "等待审核",
+            //   icon: "success",
+            //   duration: 2000
+            // });
+            this.$vux.toast.show({
+              text: "提交成功",
+              type: "success"
+            });
+            this.add = false;
+            this.status = false;
+            this.content = "";
+            setTimeout(() => {
+              this.$emit("send");
+              this.$emit("sendStatusM", this.status);
+            }, 2000);
+          }
+        });
+      } else {
+        this.$vux.toast.text("请输入内容", "middle");
+      }
+    }
+  }
+};
+</script>
+<style scoped lang="less">
+/* .footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 88px;
+        text-align: center;
+        line-height: 88px;
+        background: #f1f1f1;
+        font-size: 28px;
+        color: #555;
+        z-index: 101;
+    }
+    .footer img{
+        width: 40px;
+        height: 40px;
+        vertical-align: middle;
+        margin-right: 10px;
+    } */
+* {
+  touch-action: pan-y;
+}
+.commentbor {
+  width: 100%;
+  height: 90px;
+  overflow: hidden;
+  border-top: 1px solid #f3f3f3;
+  border-bottom: 1px solid #fff;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  box-sizing: border-box;
+  z-index: 999;
+}
+.write-comment {
+  width: 100%;
+  box-sizing: border-box;
+  height: 86px;
+  font-size: 30px;
+  color: #555;
+  background-color: #f1f1f1;
+  text-align: center;
+  line-height: 86px;
+}
+.write-comment input {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 96%;
+  height: 60px;
+  border: none;
+  line-height: 60px;
+  padding-right: 80px;
+  border-radius: 14px;
+  background: #f1f1f1 url("http://img.meiduduo.com/images/face.png") no-repeat
+    560px center;
+  background-size: 36px;
+}
+/* 样式 */
+
+.writeComment1 {
+  width: 100%;
+  height: 88px;
+  /* margin: 13px auto; */
+  /* height: 85px; */
+  padding: 14px 20px;
+  font-size: 24px;
+  color: #555;
+  background: #fff;
+  box-sizing: border-box;
+  padding-right: 0;
+}
+
+.writeComment1 .send {
+  float: left;
+  width: 15%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #53a6dc;
+  float: left;
+  font-size: 26px;
+}
+
+.writeComment1 .input {
+  float: left;
+  width: 85%;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 20px;
+  background: #f1f1f1;
+  padding-left: 30px;
+  box-sizing: border-box;
+  border: none;
+  input {
+    width: 76%;
+    background: #f1f1f1;
+    border: none;
+    height: 60px;
+    outline: none;
+  }
+}
+.comment-module-message-info {
+  background-image: url('http://img.meiduduo.com/images/info/footer_comment.png');
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  padding-left: 56px;
+}
+</style>
